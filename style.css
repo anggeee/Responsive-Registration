@@ -1,0 +1,166 @@
+:root {
+  --background: #170330;
+  --pink: #ff4f80;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+  background-color: var(--background);
+}
+
+h2,
+p,
+label {
+  color: var(--white);
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.main-container {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 40em) {
+  .main-container {
+    flex-direction: column;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+}
+
+.logo {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+}
+
+.header-form {
+  padding: 1rem;
+}
+
+header {
+  font-size: 1.2rem;
+}
+
+.squid-guard {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+}
+
+.register {
+  color: var(--pink);
+}
+
+.reg-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.registration-container {
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+  height: auto;
+  padding: 60px 30px 60px;
+  background: linear-gradient(
+    140.07deg,
+    rgba(255, 255, 255, 0.43) 0%,
+    rgba(255, 255, 255, 0.1) 102.31%
+  );
+  box-shadow: -8px 0px 10px 2px rgba(248, 248, 248, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+section {
+  padding: 0 1.5rem;
+}
+
+.section-class {
+  padding: 0 6rem;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+.field-containers {
+  padding: 0 40px 0;
+}
+
+input[type="text"],
+inupt[type="email"],
+input[type="password"] {
+  display: block;
+}
+
+.input-field {
+  width: calc(200% / 2 - 20px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: transparent;
+  color: var(--white);
+  border: 5px, var(--white);
+  margin-top: 5px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid var(--pink);
+}
+
+.checkbox {
+  margin-bottom: 1rem;
+}
+
+.btn-register {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: "Saira", sans-serif;
+  font-size: 18px;
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 10px 30px 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-register:hover {
+  background-color: #ff6f97;
+}
+
+@media screen and (min-width: 601px) {
+  header {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 15px;
+  }
+}
